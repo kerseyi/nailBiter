@@ -83,18 +83,20 @@ $("#weatherAnimation").attr("class","cloudy");
 
     });
      $("#inClass").click(function(){
-       $("#activityDiv").attr("src","img/inClass.svg");
+
         $("#halfImg").attr("src", "img/class.jpg");
         $("#leftHandImage").attr("src","img/SSL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
+        $("#activityDiv").attr("src","img/inClass.svg");
         var activity = "in class";
         console.log(activity);
     });
     $("#studying").click(function(){
-      $("#activityDiv").attr("src","img/study.svg");
+
         $("#halfImg").attr("src", "img/study.jpg");
         $("#leftHandImage").attr("src","img/WRL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
+        $("#activityDiv").attr("src","img/study.svg");
         var activity = "studying";
         console.log(activity);
 
