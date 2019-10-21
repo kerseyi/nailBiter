@@ -18,8 +18,9 @@ var leftMiddleWork = getItem("6","F", displayData(), "data");
 //printThoughts(thoughts);
 
 
-var weather = "cloudy";
-var activity = "working";
+$("#weatherAnimation").attr("class","cloudy");
+        $("#leftHandImage").attr("src","img/ICCR-5.png");
+        $("#rightHandImage").attr("src","img/ICCL-5.png");
 //var stuff = getItem("3", "B", displayData(), "data");
 //var stuff = getColumn("Activities",displayData(),"data");
 /*$.each(stuff, function(index, value){
