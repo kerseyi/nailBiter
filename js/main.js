@@ -12,7 +12,7 @@ var leftMiddleWork = getItem("6","F", displayData(), "data");
 
 
 /*function printThoughts(thoughts){
-   
+
 }*/
 
 //printThoughts(thoughts);
@@ -37,7 +37,7 @@ $("#weatherAnimation").attr("class","cloudy");
         $("#rightHandImage").attr("src","img/ICCL-5.png");
         var weather = "cloudy";
         console.log(weather);
-        
+
     });
     $("#rainy").click(function(){
         $("#weatherAnimation").attr("class","rainy");
@@ -56,32 +56,34 @@ $("#weatherAnimation").attr("class","cloudy");
 
     //activities
     $("#working").click(function(){
-        var imageUrl = "img/work.jpg";
-        var imageUrl = "img/deskView.jpg";
+        $("#activityDiv").attr("src","img/work.svg");
         $("#leftHandImage").attr("src","img/WRL-5.png");
         $("#rightHandImage").attr("src","img/WSR-5.png");
         $("#halfImg").attr("src", "img/work.jpg");
-        
+
         var activity = "working";
         console.log(activity);
     });
     $("#travelling").click(function(){
         var activity = "travelling";
+        $("#activityDiv").attr("src","img/travelling.svg");
         $("#leftHandImage").attr("src","img/WCL-5.png");
         $("#rightHandImage").attr("src","img/WSR-5.png");
         console.log(activity);
         $("#halfImg").attr("src", "img/car.jpg");
-       
+
     });
     $("#relaxing").click(function(){
+      $("#activityDiv").attr("src","img/relax.svg");
         $("#halfImg").attr("src", "img/relax.jpg");
         $("#leftHandImage").attr("src","img/ICCR-5.png");
         $("#rightHandImage").attr("src","img/ICCL-5.png");
         var activity = "relaxing";
         console.log(activity);
-        
+
     });
      $("#inClass").click(function(){
+       $("#activityDiv").attr("src","img/inClass.svg");
         $("#halfImg").attr("src", "img/class.jpg");
         $("#leftHandImage").attr("src","img/SSL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
@@ -89,13 +91,14 @@ $("#weatherAnimation").attr("class","cloudy");
         console.log(activity);
     });
     $("#studying").click(function(){
+      $("#activityDiv").attr("src","img/study.svg");
         $("#halfImg").attr("src", "img/study.jpg");
         $("#leftHandImage").attr("src","img/WRL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
         var activity = "studying";
         console.log(activity);
-        
-    }); 
+
+    });
 /*function setVars(){
     if(activity == "working" && weather == "cloudy") {
         $("#progressL1").attr("style", "width: 90px");
@@ -129,7 +132,5 @@ $("#weatherAnimation").attr("class","cloudy");
         $("#progressR2").attr("style", "width: 3px");
         $("#progressR3").attr("style", "width: 60px");
         $("#progressR4").attr("style", "width: 30px");
-        $("#progressR5").attr("style", "width: 21px"); 
+        $("#progressR5").attr("style", "width: 21px");
     }  */
-  
-
