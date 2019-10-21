@@ -679,3 +679,8 @@ marquee {
     right: 25%;
     height: 125px;
 }
+
+.progressLT {
+	transform: rotate(-90deg);
+	background: transparent;
+}
