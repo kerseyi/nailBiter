@@ -56,7 +56,7 @@ $("#weatherAnimation").attr("class","cloudy");
 
     //activities
     $("#working").click(function(){
-        $("#activityDiv").attr("src","img/work.svg");
+        $("#activityDiv").attr("src","img/workSVG.svg");
         $("#leftHandImage").attr("src","img/WRL-5.png");
         $("#rightHandImage").attr("src","img/WSR-5.png");
         $("#halfImg").attr("src", "img/work.jpg");
@@ -66,7 +66,7 @@ $("#weatherAnimation").attr("class","cloudy");
     });
     $("#travelling").click(function(){
         var activity = "travelling";
-        $("#activityDiv").attr("src","img/travelling.svg");
+        $("#activityDiv").attr("src","img/travellingSVG.svg");
         $("#leftHandImage").attr("src","img/WCL-5.png");
         $("#rightHandImage").attr("src","img/WSR-5.png");
         console.log(activity);
@@ -74,7 +74,7 @@ $("#weatherAnimation").attr("class","cloudy");
 
     });
     $("#relaxing").click(function(){
-      $("#activityDiv").attr("src","img/relax.svg");
+      $("#activityDiv").attr("src","img/relaxSVG.svg");
         $("#halfImg").attr("src", "img/relax.jpg");
         $("#leftHandImage").attr("src","img/ICCR-5.png");
         $("#rightHandImage").attr("src","img/ICCL-5.png");
@@ -87,7 +87,7 @@ $("#weatherAnimation").attr("class","cloudy");
         $("#halfImg").attr("src", "img/class.jpg");
         $("#leftHandImage").attr("src","img/SSL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
-        $("#activityDiv").attr("src","img/inClass.svg");
+        $("#activityDiv").attr("src","img/inClassSVG.svg");
         var activity = "in class";
         console.log(activity);
     });
@@ -96,7 +96,7 @@ $("#weatherAnimation").attr("class","cloudy");
         $("#halfImg").attr("src", "img/study.jpg");
         $("#leftHandImage").attr("src","img/WRL-5.png");
         $("#rightHandImage").attr("src","img/SCR-5.png");
-        $("#activityDiv").attr("src","img/study.svg");
+        $("#activityDiv").attr("src","img/studySVG.svg");
         var activity = "studying";
         console.log(activity);
 
