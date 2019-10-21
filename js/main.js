@@ -87,7 +87,6 @@ $("#weatherAnimation").attr("class","cloudy");
         $("#rightHandImage").attr("src","img/SCR-5.png");
         var activity = "in class";
         console.log(activity);
-        setVars();
     });
     $("#studying").click(function(){
         $("#halfImg").attr("src", "img/study.jpg");
