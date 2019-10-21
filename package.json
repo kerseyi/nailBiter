@@ -39,6 +39,7 @@
         "g-sheets-api": "^1.0.2",
         "gulp": "4.0.2",
         "gulp-sass": "^4.0.2",
+        "material-kit": "^2.0.4",
         "merge-stream": "2.0.0"
     }
 }

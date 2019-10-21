@@ -8,49 +8,60 @@
     <title>nailBiter!</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/material-kit/assets/css/material-kit.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <nav class="navbar navbar-expand-lg  static-top">
       <div class="container">
-        <a class="navbar-brand" href="#">NAIL BITER!</a>
+        <a class="navbar-brand" href="#"><img style="width: 50%;" class="headerImg" src="img/header.png" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
-              </a>
+            <li class="">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#activityModal">
+              Pick Activity
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#weatherModal">
+              Pick Weather
+              </button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
+            
+            
           </ul>
         </div>
       </div>
     </nav>
+    
     <!-- Page Content -->
     <section class="activity">
-      
       
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h1 class="mt-5">NAIL BITER</h1>
+            <div id="randomThoughts">
+              <!-- <div class="weatherContainer">
+                <div class="sunny"></div>
+                <div class="cloudy"></div>
+                <div class="rainy"></div>
+                <div class="snowy"></div>
+                <div class="rainbow"></div>
+                <div class="starry"></div>
+                <div class="stormy"></div>
+              </div> -->
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-6">
             <div class="leftHand">
+              <p class="test"></p>
               <img src="img/leftHand.png" alt="">
             </div>
           </div>
@@ -63,18 +74,82 @@
       </div>
     </section>
     <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    
+    <!-- Weather Modal -->
+    <div class="modal fade" id="weatherModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Pick Weather</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" style="height: 25vh;">
+            <div class = "container-fluid">
+              <div class="row weatherContainer">
+                
+                <div class="col-lg-4">
+                  <div class="sunny">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="cloudy">
+                    
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="rainy">
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="row ">
+                
+                <div class="col-lg-4">
+                  <button id="sunny" type="button" class="btn btn-primary">Sunny</button>
+                </div>
+                <div class="col-lg-4">
+                  <button id="cloudy" type="button" class="btn btn-primary">Cloudy</button>
+                </div>
+                <div class="col-lg-4">
+                  <button id="rainy" type="button" class="btn btn-primary">Rainy</button>
+                </div>
+              </div>
+              
+              
+              
+            </div>
+            <div>
+              
+              
+            </div>
+            
+            
+            
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+        
+        <button id="sunny" type="button" class="btn btn-primary">Rainy</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Activity Modal -->
+<div class="modal fade" id="activityModal" tabindex="-1" role="dialog" aria-labelledby="activityModal" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
@@ -82,16 +157,22 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="work" type="button" class="btn btn-primary">Work</button>
-        <button id="desk" type="button" class="btn btn-primary">Desk</button>
+        <button id="travelling" type="button" class="btn btn-primary">Travelling</button>
+        <button id="working" type="button" class="btn btn-primary">Working</button>
+        <button id="studying" type="button" class="btn btn-primary">Studying</button>
+        <button id="inClass" type="button" class="btn btn-primary">In class</button>
+        <button id="relaxing" type="button" class="btn btn-primary">Relaxing</button>
       </div>
     </div>
   </div>
 </div>
-    <!-- Bootstrap core JavaScript -->
-    
-    <script src="vendor/jquery/jquery.slim.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+<!-- Bootstrap core JavaScript -->
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/goodSheet.js"></script>
+<script src="js/main.js"></script>
+</body>
 </html>
