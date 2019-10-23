@@ -18,9 +18,19 @@ body {
 }
 
 .customNav {
+	font-family: rig-solid-bold-reverse, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
 	height: 100vh;
 	list-style: none;
 	color: white;
+}
+
+.customNav button {
+	font-size: 24px;
+	width: 100%;
 }
 .activity {
 
@@ -933,8 +943,8 @@ animation: weatherBG 16s ease infinite;
 }
 
 .halftone > * {
-    filter: brightness(0.5) blur(5px);
-    animation: 500s animation-filter infinite alternate;
+    filter: brightness(0.5) blur(4px);
+    animation: 10s animation-filter infinite alternate;
 }
 
 .halftone::after {
@@ -946,22 +956,22 @@ animation: weatherBG 16s ease infinite;
     bottom: -100%;
     background-blend-mode: multiply;
     background:
-        radial-gradient(150px 20px, cyan, white),
-        radial-gradient(10px 5px, magenta, white),
-        radial-gradient(50px 20px, yellow, white);
-    background-size: 10px 20px;
+        radial-gradient(8px 8px, cyan, white),
+        radial-gradient(8px 8px, magenta, white),
+        radial-gradient(8px 8px, yellow, white);
+    background-size: 8px 8px;
     background-position: 0 -3px, -2px 0, 2px 0;
     mix-blend-mode: screen;
     pointer-events: none;
     transform: rotate(11.25deg);
-    transition: 15s ease-in-out transform;
+    transition: 1s ease-in-out transform;
     z-index: 1;
-    animation: 30s animation-overlay infinite alternate;
+    animation: 10s animation-overlay infinite alternate;
 }
 
 @keyframes animation-overlay {
     0% {
-        transform: rotate(45.25deg) scale(3);
+        transform: rotate(60.25deg) scale(5);
     }
 
     100% {
@@ -975,26 +985,6 @@ animation: weatherBG 16s ease infinite;
     }
 
     100% {
-        filter: brightness(0.5) blur(30px);
+        filter: brightness(0.5) blur(4px);
     }
 }
-
-/*.halftone {
-  display: block;
-  height: 720px;
-  position: relative;
-  filter: saturate(0) brightness(2) contrast(5);
-  -webkit-filter: saturate(0) brightness(2) contrast(5);
-}
-.halftone::before {
-  content: ' ';
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  background-size: 14px 10px, 14px 10px;
-  background-position: 0, 7px 0px;
-  background-image: radial-gradient(circle, #000, rgba(255, 255, 255, 0) 60%), radial-gradient(circle, #000, rgba(255, 255, 255, 0) 60%);
-  mix-blend-mode: multiply;
-}*/
