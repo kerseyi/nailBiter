@@ -110,6 +110,13 @@ position: fixed;
 #progressR1 {
 
 }
+	
+/* .speechBubble {
+
+	animation-duration: 60s;
+  animation-delay: 10s;
+   animation-iteration-count: infinite;
+} */
 .speechDiv {
 	position: fixed;
     left: -4vw;
@@ -131,7 +138,7 @@ position: fixed;
 
 .rightHandImg {
 	position: fixed;
-    right: 23vw;
+    right: 30vw;
     bottom: -80px;
     width: 350px;
 }
