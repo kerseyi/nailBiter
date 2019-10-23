@@ -39,7 +39,7 @@ font-style: normal;
 
 .customNav button {
 	font-size: 24px;
-	width: 100%;
+	width: 250px;
 }
 .activity {
 
@@ -146,8 +146,8 @@ position: fixed;
 }
 
 .headerImg{
-	width: 100%;
-	margin-bottom: 40px;
+	width: 85%;
+	//margin-bottom: 40px;
 }
 
 .tenPercent{
@@ -832,7 +832,7 @@ animation: weatherBG 16s ease infinite;
 	width: 300px;
     position: fixed;
     top: 3vh;
-    left: 60vw;
+    left: 56vw;
     background-color: #808080;
     height: 210px;
     border-radius: 326px;
