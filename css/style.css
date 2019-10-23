@@ -28,6 +28,15 @@ font-style: normal;
 	color: white;
 }
 
+.customNav h2 {
+	font-family: rig-solid-bold-reverse, sans-serif;
+	text-align: center;
+
+font-weight: 700;
+
+font-style: normal;
+}
+
 .customNav button {
 	font-size: 24px;
 	width: 100%;
