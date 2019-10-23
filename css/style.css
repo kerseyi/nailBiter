@@ -39,7 +39,7 @@ font-style: normal;
 
 .customNav button {
 	font-size: 24px;
-	width: 250px;
+	width: 225px;
 }
 .activity {
 
@@ -818,11 +818,11 @@ marquee {
 	width: 300px;
     position: fixed;
     top: 3vh;
-    left: 37vw;
+    left: 40vw;
     background-color: #808080;
     height: 210px;
     border-radius: 326px;
-		background: linear-gradient(105deg, #0032fb, #2ff702);
+		background: linear-gradient(105deg, #DF00FE, #A117F2);
 background-size: 400% 400%;
 
 -webkit-animation: weatherBG 16s ease infinite;
@@ -839,11 +839,11 @@ animation: weatherBG 16s ease infinite;
 	width: 300px;
     position: fixed;
     top: 3vh;
-    left: 56vw;
+    left: 62vw;
     background-color: #808080;
     height: 210px;
     border-radius: 326px;
-		background: linear-gradient(71deg, #db61d6, #2ff702);
+		background: linear-gradient(71deg, #ff0000, #f44336);
 		background-size: 400% 400%;
 
 		-webkit-animation: activityBG 17s ease infinite;
